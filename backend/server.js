@@ -58,10 +58,7 @@ const connectDB = async () => {
     const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/mcq-automation';
     console.log('Connecting to MongoDB:', mongoURI);
     
-    await mongoose.connect(mongoURI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(mongoURI);
     
     console.log('✅ Connected to MongoDB successfully');
     
