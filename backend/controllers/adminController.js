@@ -3,7 +3,7 @@ import Quiz from '../models/Quiz.js';
 import QuizAttempt from '../models/QuizAttempt.js';
 import User from '../models/User.js';
 import csv from 'csv-parser';
-import * as XLSX from 'xlsx';
+import XLSX from 'xlsx';
 import fs from 'fs';
 
 export const getDashboardStats = async (req, res) => {
